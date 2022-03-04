@@ -1,5 +1,4 @@
 # Tech Report
-This is where you can type out your tech report.
 
 ## DATA DELIVERABLES (some metadata and visualizations): https://docs.google.com/spreadsheets/d/1xQTzauyCMY7PSyFvPY2e67AwkOLXV8fPT3Z_BHlnDss/edit?usp=sharing
 
