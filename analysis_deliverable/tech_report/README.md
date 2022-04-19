@@ -9,25 +9,32 @@ A defined hypothesis or prediction task, with clearly stated metrics for success
 
 One of the hypotheses we considered was the following:
 
-We want to know whether the average day gap between transactions (ADGT) for digital customers are different from that of store customers.
+We want to know whether the average day gap between transactions (ADGT) for digital customers is different from that of store customers.
 
-In order to perform this statistical analysis, we define a metric, which we call ADGT (for average day gap between transactions) as follows:
+We define the null hypothesis, H_0 as: The means of the ADGTs for digital and store customers are similar to each other. As a result, our althernate hypothesis, H_a is: The means of the ADGTs for digital and store customers are different from each other.
+
+In order to perform this statistical analysis, we define an industry standard metric, **ADGT** (average day gap between transactions) as follows:
 
 $$adgt = \frac{(date of last purchase - data of first purchase)}{total number of purchases in this period}$$
 
-We populated a dataframe with all the customer IDs and each customer’s avg_freq value for each sales channel (store and digital). We then performed an independent T-test on these two dataframes to obtain a T-statistic of 26.187 and a p-value of 4.106e-151. Since the p-value is significantly small (<0.05), we can safely reject the null hypothesis. This leads us to the conclusion that the purchase patterns of digital customers are significantly different from the purchase patterns of store customers.
+We populated a dataframe with all the customer IDs and each customer’s ADGT value for each sales channel (store and digital). We then performed an independent T-test on these two dataframes to obtain a T-statistic of  and a p-value of 0.07. Since the p-value is higher than 0.001, we accept the null hypothesis. This leads us to the conclusion that the purchase patterns of digital customers are not significantly different from the purchase patterns of store customers; they are similar to each other.
 
+Observe in the box plot graph that the means of the two distributions are aligned. This confirms our conclusion about accepting the null hypothesis.
 
-### Why did you use this statistical test or ML algorithm? 
+![alt_text](https://github.com/cs1951a-brown-spring-2022/TrainDy/blob/main/analysis_deliverable/TTEST.png)
 
-We used the T-test because we wanted to compare two distributions to determine whether they are statistically different.
+### Why did you use this statistical test? 
+
+We used the two sample T-test because we wanted to compare two distributions to determine whether they are statistically different. Two sampled T-Tests determine whether the means of the two distributions are similar to each other.
 
 ### How did you measure success or failure? Why that metric/value? What challenges did you face evaluating the model? Did you have to clean or restructure your data?
 For the purposes of this project, we split our data into train (2017 - half of 2018 data) and test (remaining half of 2018 - 2019). We first converted the train data into a user purchase history matrix for each customer. This matrix would contain “1” if a user has purchased that product and “0” otherwise. We then trained our CVAE on this user purchase history matrix to obtain a latent space that our CVAE would use to generate new samples for a customer of a given category from the same distribution. In order to validate our model, we will calculate the precision and recall of the prediction on the train and test data. We alternatively consider using the cosine similarity between the predicted user history and the actual user history in the test dataset for returning users. 
 
-On further discussion, we figured that precision and recall may be harsh metrics to evaluate the model with because the purchase patterns of a customer may not depend solely on the recommendations. There are several other ways to figure out the impact of the recommendation on the customer, such as their engagement time with that recommendation and number of clicks, etc. However, in the absence of this information, we cannot penalize the model for not predicting all of the customer’s future purchases. Therefore, we have decided to go with a new thresholded metric, that we call recall_30.   
+On further discussion, we figured that precision and recall may be harsh metrics to evaluate the model with because the purchase patterns of a customer may not depend solely on the recommendations. There are several other ways to figure out the impact of the recommendation on the customer, such as their engagement time with that recommendation and number of clicks, etc. However, in the absence of this information, we cannot penalize the model for not predicting all of the customer’s future purchases. Therefore, we have decided to go with a new thresholded metric, that we call **recall_30**. We define our measure of success as, if a customer purchases at least 30% of the products recommended to them. We then count the number of successfully recommended customers and divide by the total number of customers served to give our success score.
 
-One of the major challenges we faced while evaluating the model was because of the highly sparse nature of the user purchase history matrix. In other words, since customers end up purchasing a very small percentage of the total number of products, a lot of the entries in the matrix for each user are “0”. As a result, initially when we used these metrics to evaluate the model, we recognized that the model could simply produce a matrix with all 0’s and the loss would still be very low. As an extension of this catch, we also observed this behavior during training, where the model started “cheating” by learning to output all zeroes. However, we could fix this by replacing the loss function, which was originally MSE, with a cosine similarity-based loss function which pushes the model to produce outputs with some ones indicating possible predicted recommendations. 
+One of the major challenges we faced while evaluating the CVAE model was because of the highly sparse nature of the user purchase history matrix. In other words, since customers end up purchasing a very small percentage of the total number of products, a lot of the entries in the matrix for each user are “0”. As a result, initially when we used these metrics to evaluate the model, we recognized that the model could simply produce a matrix with all 0’s and the loss would still be very low. As an extension of this catch, we also observed this behavior during training, where the model started “cheating” by learning to output all zeroes. However, we could fix this by replacing the loss function, which was originally MSE, with a cosine similarity-based loss function which pushes the model to produce outputs with some ones indicating possible predicted recommendations. 
+
+We also faced challenges with clustering part of our architecture because most of our demographic data for a given customer was categorical in nature. This does not work well with k means because there is no implicit distance ordering between different categories. We therefore considered k modes clustering to include categorical variables. However, due to how expensive the algorithm is in terms of time, we decided to filter out the categorical variables and purely use the continuous variables to cluster. We then use min max scaling to normalize the feature space. We will be doing more experiments with this aspect before the final submission.
 
 
 ### What is your interpretation of the results? Do accept or deny the hypothesis, or are you satisfied with your prediction accuracy? For prediction projects, we expect you to argue why you got the accuracy/success metric you have. Intuitively, how do you react to the results? Are you confident in the results?
@@ -58,8 +65,6 @@ We picked this graph because knowing this information could be valuable to the c
 ![alt text](https://github.com/cs1951a-brown-spring-2022/TrainDy/blob/main/analysis_deliverable/Mean%20Price%20Over%20Time.png)
 
 ### Full results + graphs (at least 1 stats/ml test and at least 1 visualization). You should push your visualizations to the /analysis_deliverable/visualizations folder in your repo. Depending on your model/test/project we would ideally like you to show us your full process so we can evaluate how you conducted the test!
-
-### If you did a statistics test, are there any confounding trends or variables you might be observing?
 
 
 ### If you did a machine learning model, why did you choose this machine learning technique? Does your data have any sensitive/protected attributes that could affect your machine learning model?
