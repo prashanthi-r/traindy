@@ -21,7 +21,7 @@ We populated a dataframe with all the customer IDs and each customer’s ADGT va
 
 Observe in the box plot graph that the means of the two distributions are aligned. This confirms our conclusion about accepting the null hypothesis.
 
-![alt_text](https://github.com/cs1951a-brown-spring-2022/TrainDy/blob/main/analysis_deliverable/TTEST.png)
+![alt_text](https://github.com/cs1951a-brown-spring-2022/TrainDy/blob/main/analysis_deliverable/visualizations/TTEST.png)
 
 ### Why did you use this statistical test? Did you find the results corresponding to your initial belief on the data? If Yes/No why do you think this was the case?
 
