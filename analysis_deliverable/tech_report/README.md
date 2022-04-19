@@ -82,7 +82,7 @@ This led to us to lower dimensional representations of our incredibly sparse use
 
 To create user clusters we used K-means clustering with cross validation on user specific data such as Average Dollar Spent (year), Active Period (Regularity of users), Age, Club Member Status, Sales Channel usage patterns etc. We tested different K values and created an elbow plot to decide on the ideal K value beyond which the error rate does not see significant difference. The labels of the clusters created form the labels for a given customer which is fed into the model described below to give out recommendations for products based on user cluster groups.
 
-![alt text](https://github.com/cs1951a-brown-spring-2022/TrainDy/blob/main/analysis_deliverable/visualizations/download.png)
+![alt text](https://github.com/cs1951a-brown-spring-2022/TrainDy/blob/main/analysis_deliverable/visualizations/Screen%20Shot%202022-04-18%20at%2011.47.01%20PM.png)
 
 Thus to summarize our ML model uses a 2 model ensemble pipeline to generate recommendations. Here is an illustration:
 ![alt text](https://github.com/cs1951a-brown-spring-2022/TrainDy/blob/main/analysis_deliverable/visualizations/Screen%20Shot%202022-04-18%20at%209.17.10%20PM.png)
