@@ -1,4 +1,4 @@
-# Tech Report
+x# Tech Report
 This is where you can type out your tech report.
 
 We have answered only the questions in the handout as suggested by our mentor TA. 
@@ -51,11 +51,11 @@ As an experiment, we evaluated the model with a redefined metric, where we categ
 
 We picked this graph because knowing this information could be valuable to the company in increasing their revenue depending on the sales channel. Other ways we can communicate this information would be by providing the reader the mean, median, mode, and other statistical metrics of the two distributions. This visualization would require text to explain to provide context; although the legends and the axis labels are good enough to explain what the graph represents, it is important to provide textual context to explain the trends in the curves. 
 
-![alt text](https://github.com/cs1951a-brown-spring-2022/TrainDy/blob/main/analysis_deliverable/Revenue%20Over%20Time%20Across%20Channels.png)
+![alt text](https://github.com/cs1951a-brown-spring-2022/TrainDy/blob/main/analysis_deliverable/visualizations/Revenue%20Over%20Time%20Across%20Channels.png)
 
 (2) For our second visualization, we created a pie chart with the distribution of popular color choices. We picked this graph because it helps the company understand popular color choices in order to make their recommendation systems better. Another way to communicate this information would have been to make a table with the percentage for each color. In our opinion, this visualization would not require any text to explain because the colors and percentages have been labeled on the chart. 
 
-![alt text](https://github.com/cs1951a-brown-spring-2022/TrainDy/blob/main/analysis_deliverable/Pie%20Chart.png)
+![alt text](https://github.com/cs1951a-brown-spring-2022/TrainDy/blob/main/analysis_deliverable/visualizations/Pie%20Chart.png)
 
 (3) For this visualization, we plotted the distribution of the customers across different ages. It is clear from the plot that this is a bimodal distribution. The plot peaks at two age groups, one around 20-25 and one around 50-55. We chose this visualization because it helps the company get an idea of the age groups they need to focus on to make more sales. Further, it is interesting to probe into why there are two peaks. One hypothesis would be that people around the ages of 50-55 have younger children in the age groups 15-25 and are buying clothes for their children, and as a result, 50-55 is a mode in the plot too. Another way to communicate this information would be to make a table with different age group bins and the number of people in each bin. Although this graph is well-labeled, I think a reader might benefit from having textual context explaining the peaks, patterns, and trends in the histogram.
 
@@ -63,11 +63,11 @@ We picked this graph because knowing this information could be valuable to the c
 
 (4) For this visualization, we plotted the multichannel transactional behavior over ages of the customers. From the plot, we can observe that sales are higher for multichannel customers as opposed to customers who shop from one channel alone. We chose this visualization because it is useful to understand sales as per to the sales channel. This visualization would require textual information to give context to the reader about the implication of the sales being higher for multichannels vs one channel alone. 
 
-![alt text](https://github.com/cs1951a-brown-spring-2022/TrainDy/blob/main/analysis_deliverable/WhatsApp%20Image%202022-04-18%20at%206.46.07%20PM.jpeg)
+![alt text](https://github.com/cs1951a-brown-spring-2022/TrainDy/blob/main/analysis_deliverable/visualizations/WhatsApp%20Image%202022-04-18%20at%206.46.07%20PM.jpeg)
 
 (5) Other visualizations:
 
-![alt text](https://github.com/cs1951a-brown-spring-2022/TrainDy/blob/main/analysis_deliverable/Mean%20Price%20Over%20Time.png)
+![alt text](https://github.com/cs1951a-brown-spring-2022/TrainDy/blob/main/analysis_deliverable/visualizations/Mean%20Price%20Over%20Time.png)
 
 ### If you did a machine learning model, why did you choose this machine learning technique? Does your data have any sensitive/protected attributes that could affect your machine learning model?
 
@@ -77,7 +77,7 @@ This led to us to lower dimensional representations of our incredibly sparse use
 
 To create user clusters we used K-means clustering with cross validation on user specific data such as Average Dollar Spent (year), Active Period (Regularity of users), Age, Club Member Status, Sales Channel usage patterns etc. We tested different K values and created an elbow plot to decide on the ideal K value beyond which the error rate does not see significant difference. The labels of the clusters created form the labels for a given customer which is fed into the model described below to give out recommendations for products based on user cluster groups.
 
-![alt text](https://github.com/cs1951a-brown-spring-2022/TrainDy/blob/main/analysis_deliverable/download.png)
+![alt text](https://github.com/cs1951a-brown-spring-2022/TrainDy/blob/main/analysis_deliverable/visualizations/download.png)
 
 Thus to summarize our ML model uses a 2 model ensemble pipeline to generate recommendations. Here is an illustration:
-![alt text](https://github.com/cs1951a-brown-spring-2022/TrainDy/blob/main/analysis_deliverable/Screen%20Shot%202022-04-18%20at%209.17.10%20PM.png)
+![alt text](https://github.com/cs1951a-brown-spring-2022/TrainDy/blob/main/analysis_deliverable/visualizations/Screen%20Shot%202022-04-18%20at%209.17.10%20PM.png)
