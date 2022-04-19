@@ -29,9 +29,9 @@ We used the two sample T-test because we wanted to compare two distributions to 
 
 Our initial belief was that the average day gap between transactions for digital customers would be lower as opposed to store customers, because of the convenience of online shopping. However, our results showed that there isn’t a statistically significant difference between the distributions. This is useful information for H & M because it helps them understand the purchasing trends and ensures they focus on both channels equally. This might be because people usually don’t shop on multiple days (laziness) and complete most transactions within the same day, much like online shopping.
 
-### Was the data adequate for your analysis? If not what aspects of the data was problematic and how could you have remedied that 
+### Was the data adequate for your analysis?
 
-The data was more than adequate for our analysis to conduct the analysis 
+The data was more than adequate for our analysis to conduct the analysis.
 
 
 ### How did you measure success or failure? Why that metric/value? What challenges did you face evaluating the model? Did you have to clean or restructure your data?
