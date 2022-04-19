@@ -1,6 +1,8 @@
 # Tech Report
 This is where you can type out your tech report.
 
+We have answered only the questions in the handout as suggested by our mentor TA. 
+
 ### A defined hypothesis or prediction task, with clearly stated metrics for success.
 
 A defined hypothesis or prediction task, with clearly stated metrics for success.
@@ -9,9 +11,9 @@ One of the hypotheses we considered was the following:
 
 We want to know whether the average day gap between transactions (ADGT) for digital customers are different from that of store customers.
 
-In order to perform this statistical analysis, we define a metric, which we call “avg_freq” (for average frequency) as follows:
+In order to perform this statistical analysis, we define a metric, which we call ADGT (for average day gap between transactions) as follows:
 
-$$avg_freq = \frac{(date of last purchase - data of first purchase)}{total number of purchases in this period}$$
+$$adgt = \frac{(date of last purchase - data of first purchase)}{total number of purchases in this period}$$
 
 We populated a dataframe with all the customer IDs and each customer’s avg_freq value for each sales channel (store and digital). We then performed an independent T-test on these two dataframes to obtain a T-statistic of 26.187 and a p-value of 4.106e-151. Since the p-value is significantly small (<0.05), we can safely reject the null hypothesis. This leads us to the conclusion that the purchase patterns of digital customers are significantly different from the purchase patterns of store customers.
 
@@ -19,9 +21,6 @@ We populated a dataframe with all the customer IDs and each customer’s avg_fre
 ### Why did you use this statistical test or ML algorithm? 
 
 We used the T-test because we wanted to compare two distributions to determine whether they are statistically different.
-
-### Which other tests did you consider or evaluate? 
-
 
 ### How did you measure success or failure? Why that metric/value? What challenges did you face evaluating the model? Did you have to clean or restructure your data?
 For the purposes of this project, we split our data into train (2017 - half of 2018 data) and test (remaining half of 2018 - 2019). We first converted the train data into a user purchase history matrix for each customer. This matrix would contain “1” if a user has purchased that product and “0” otherwise. We then trained our CVAE on this user purchase history matrix to obtain a latent space that our CVAE would use to generate new samples for a customer of a given category from the same distribution. In order to validate our model, we will calculate the precision and recall of the prediction on the train and test data. We alternatively consider using the cosine similarity between the predicted user history and the actual user history in the test dataset for returning users. 
