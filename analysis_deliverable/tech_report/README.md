@@ -6,11 +6,12 @@ This is where you can type out your tech report.
 A defined hypothesis or prediction task, with clearly stated metrics for success.
 
 One of the hypotheses we considered was the following:
-We want to know whether the average day gap between transactions for digital customers are different from that of store customers.
+
+We want to know whether the average day gap between transactions (ADGT) for digital customers are different from that of store customers.
 
 In order to perform this statistical analysis, we define a metric, which we call “avg_freq” (for average frequency) as follows:
-avg_ freq = (date of last purchase - data of first purchase) / 
-total number of purchases in this period
+
+![](avg_ freq = \frac{(date of last purchase - data of first purchase)}{total number of purchases in this period})
 We populated a dataframe with all the customer IDs and each customer’s avg_freq value for each sales channel (store and digital). We then performed an independent T-test on these two dataframes to obtain a T-statistic of 26.187 and a p-value of 4.106e-151. Since the p-value is significantly small (<0.05), we can safely reject the null hypothesis. This leads us to the conclusion that the purchase patterns of digital customers are significantly different from the purchase patterns of store customers.
 
 
