@@ -1,4 +1,4 @@
-x# Tech Report
+# Tech Report
 This is where you can type out your tech report.
 
 We have answered only the questions in the handout as suggested by our mentor TA. 
@@ -28,6 +28,11 @@ Observe in the box plot graph that the means of the two distributions are aligne
 We used the two sample T-test because we wanted to compare two distributions to determine whether they are statistically different. Two sampled T-Tests determine whether the means of the two distributions are similar to each other.
 
 Our initial belief was that the average day gap between transactions for digital customers would be lower as opposed to store customers, because of the convenience of online shopping. However, our results showed that there isn’t a statistically significant difference between the distributions. This is useful information for H & M because it helps them understand the purchasing trends and ensures they focus on both channels equally. This might be because people usually don’t shop on multiple days (laziness) and complete most transactions within the same day, much like online shopping.
+
+### Was the data adequate for your analysis? If not what aspects of the data was problematic and how could you have remedied that 
+
+The data was more than adequate for our analysis to conduct the analysis 
+
 
 ### How did you measure success or failure? Why that metric/value? What challenges did you face evaluating the model? Did you have to clean or restructure your data?
 For the purposes of this project, we split our data into train (2017 - half of 2018 data) and test (remaining half of 2018 - 2019). We first converted the train data into a user purchase history matrix for each customer. This matrix would contain “1” if a user has purchased that product and “0” otherwise. We then trained our CVAE on this user purchase history matrix to obtain a latent space that our CVAE would use to generate new samples for a customer of a given category from the same distribution. In order to validate our model, we will calculate the precision and recall of the prediction on the train and test data. We alternatively consider using the cosine similarity between the predicted user history and the actual user history in the test dataset for returning users. 
