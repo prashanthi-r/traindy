@@ -33,7 +33,7 @@ This is the final project's master repo! Please use the following shortcut links
 
 - ### Final Presentation ###
   - [recording](https://drive.google.com/file/d/1pwD2OdNoPKgrikchq34bxEy-sRoVLa4y/view?usp=sharing)
-  - [slides]()
+  - [slides](https://github.com/cs1951a-brown-spring-2022/TrainDy/blob/main/2022%20April%2024.pdf)
 
 - ### Visualizations ###
   - [Visualizations](final_deliverable/visualizations)
