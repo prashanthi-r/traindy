@@ -26,8 +26,7 @@ This is the final project's master repo! Please use the following shortcut links
 [Poster](final_deliverable/poster/poster.pdf)
 
 - ### Code ###
-  - [Code](final_deliverable/code/)<br/>
-  - ([Capstone App Demo]()
+  - [Code and Capstone Demo](https://drive.google.com/drive/folders/1ui-RPimNpZHvzDVwlxYZNvDAgqLwwEAG?usp=sharing)<br/>
 
 - ### Abstract ###
   - [Abstract]()
