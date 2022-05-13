@@ -29,7 +29,7 @@ This is the final project's master repo! Please use the following shortcut links
   - [Code and Capstone Demo](https://drive.google.com/drive/folders/1ui-RPimNpZHvzDVwlxYZNvDAgqLwwEAG?usp=sharing)<br/>
 
 - ### Abstract ###
-  - [Abstract]()
+  - [Abstract](https://docs.google.com/document/d/1vT2jBBnfl-KSGef-fyG_2Ufm3hud4fHZorCo-QqWEDk/edit?usp=sharing)
 
 - ### Final Presentation ###
   - [recording](https://drive.google.com/file/d/1pwD2OdNoPKgrikchq34bxEy-sRoVLa4y/view?usp=sharing)
