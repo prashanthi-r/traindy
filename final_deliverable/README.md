@@ -13,7 +13,7 @@ This is the final deliverable's master directory! Please use the following short
 
 ### Final Presentation ###
 - [recording](https://drive.google.com/file/d/1pwD2OdNoPKgrikchq34bxEy-sRoVLa4y/view?usp=sharing)
-- [slides](https://github.com/CS1951A-S21-Brown/PALs/blob/main/final_deliverable/)
+- [slides](https://github.com/cs1951a-brown-spring-2022/TrainDy/blob/main/2022%20April%2024.pdf)
 
 ### Visualizations ###
 _You can edit this README to refer to your own visualizations once you upload them_
