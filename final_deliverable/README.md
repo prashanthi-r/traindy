@@ -9,10 +9,10 @@ This is the final deliverable's master directory! Please use the following short
 ([Capstone App Demo]())
 
 ### Abstract ###
-[Abstract](https://github.com/CS1951A-S21-Brown/PALs/blob/main/final_deliverable/)
+[Abstract](https://docs.google.com/document/d/1vT2jBBnfl-KSGef-fyG_2Ufm3hud4fHZorCo-QqWEDk/edit?usp=sharing)
 
 ### Final Presentation ###
-- [recording]()
+- [recording](https://drive.google.com/file/d/1pwD2OdNoPKgrikchq34bxEy-sRoVLa4y/view?usp=sharing)
 - [slides](https://github.com/CS1951A-S21-Brown/PALs/blob/main/final_deliverable/)
 
 ### Visualizations ###
