@@ -26,15 +26,14 @@ This is the final project's master repo! Please use the following shortcut links
 [Poster](final_deliverable/poster/poster.pdf)
 
 - ### Code ###
-  - [Code](final_deliverable/code/)<br/>
-  - ([Capstone App Demo]()
+  - [Code and Capstone Demo](https://drive.google.com/drive/folders/1ui-RPimNpZHvzDVwlxYZNvDAgqLwwEAG?usp=sharing)<br/>
 
 - ### Abstract ###
-  - [Abstract]()
+  - [Abstract](https://docs.google.com/document/d/1vT2jBBnfl-KSGef-fyG_2Ufm3hud4fHZorCo-QqWEDk/edit?usp=sharing)
 
 - ### Final Presentation ###
-  - [recording]()
-  - [slides]()
+  - [recording](https://drive.google.com/drive/folders/11vZM5d_osRu7kCR1NJj42i7o1hf2B4Ko?usp=sharing)
+  - [slides](https://github.com/cs1951a-brown-spring-2022/TrainDy/blob/main/2022%20April%2024.pdf)
 
 - ### Visualizations ###
   - [Visualizations](final_deliverable/visualizations)
