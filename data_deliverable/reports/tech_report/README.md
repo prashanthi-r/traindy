@@ -1,11 +1,8 @@
 # DATA DELIVERABLES (some metadata and visualizations): https://docs.google.com/spreadsheets/d/1xQTzauyCMY7PSyFvPY2e67AwkOLXV8fPT3Z_BHlnDss/edit?usp=sharing
 # Tech Report
 
-<<<<<<< HEAD
-=======
 ## DATA DELIVERABLES (some metadata and visualizations): https://docs.google.com/spreadsheets/d/1xQTzauyCMY7PSyFvPY2e67AwkOLXV8fPT3Z_BHlnDss/edit?usp=sharing
 
->>>>>>> 0eca8cb889e6e3fa861011236d270f700b5cc2b9
 ### Where is the data from?
 The data is from Kaggle, posted by the H&M group. It contains the data and metadata of customer purchases across time. 
 
@@ -48,8 +45,7 @@ No, we do not believe that it might affect our analyses or any conclusion as it 
 ### Summarize any challenges or observations you have made since collecting your data. Then, discuss your next steps and how your data collection has impacted the type of analysis you will perform. (approximately 3-5 sentences)
 - In the transactions table, there is no attribute corresponding to the quantity / number of units per transaction. This is a challenge because before performing any analysis on the entries in this table, we would have to clean the dataset to get idea of the transaction details.
 - Another important observation is that data is limited to 3 years (2018 - 2020). This is challenging to handle because there may be insufficient transaction information at an individual level for personalized recommendations. 
-<<<<<<< HEAD
+
 - As with most recommendation systems, the model will struggle to handle cold starts, i.e., new customers, since there is no past data to base the personalized recommendations.
-=======
+
 - As with most recommendation systems, the model will struggle to handle cold starts, i.e., new customers, since there is no past data to base the personalized recommendations.
->>>>>>> 0eca8cb889e6e3fa861011236d270f700b5cc2b9
