@@ -14,8 +14,3 @@ This is the final deliverable's master directory! Please use the following short
 ### Final Presentation ###
 - [recording](https://drive.google.com/drive/folders/11vZM5d_osRu7kCR1NJj42i7o1hf2B4Ko?usp=sharing)
 - [slides](https://github.com/cs1951a-brown-spring-2022/TrainDy/blob/main/2022%20April%2024.pdf)
-
-### Visualizations ###
-_You can edit this README to refer to your own visualizations once you upload them_
-
-[Visualizations](visualizations)
