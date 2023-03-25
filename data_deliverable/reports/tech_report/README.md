@@ -1,7 +1,7 @@
-# DATA DELIVERABLES (some metadata and visualizations): https://docs.google.com/spreadsheets/d/1xQTzauyCMY7PSyFvPY2e67AwkOLXV8fPT3Z_BHlnDss/edit?usp=sharing
 # Tech Report
 
-## DATA DELIVERABLES (some metadata and visualizations): https://docs.google.com/spreadsheets/d/1xQTzauyCMY7PSyFvPY2e67AwkOLXV8fPT3Z_BHlnDss/edit?usp=sharing
+## DATA DELIVERABLES (some metadata and visualizations): 
+https://docs.google.com/spreadsheets/d/1xQTzauyCMY7PSyFvPY2e67AwkOLXV8fPT3Z_BHlnDss/edit?usp=sharing
 
 ### Where is the data from?
 The data is from Kaggle, posted by the H&M group. It contains the data and metadata of customer purchases across time. 
